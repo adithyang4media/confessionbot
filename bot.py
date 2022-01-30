@@ -13,4 +13,4 @@ async def on_message(message):
 
     await message.channel.send('hai')
 
-client.run('os.environ['token']')
+client.run(os.environ['token'])
