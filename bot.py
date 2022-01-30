@@ -13,4 +13,4 @@ async def on_message(message):
 
     await message.channel.send('hai')
 
-client.run('OTM3Mzk1MTU3NDEyNzQxMjUz.YfbHRQ.VNd7mTmMyEkrNKQwRQPZ9j9xZ6Y')
+client.run('os.environ['bottoken']')
