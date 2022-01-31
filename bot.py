@@ -12,8 +12,9 @@ async def on_message(message):
     if message.author == client.user:
        return
 
-    await message.channel.send('hai')
+    await message.channel.send('Your Confesion is anonymously forwarded Successfully')
     channel = client.get_channel(937709682544484423)
     await channel.send(message.content)
+    await channel.send(message.author)
 
 client.run(os.environ['token'])
