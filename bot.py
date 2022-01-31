@@ -15,8 +15,8 @@ async def on_message(message):
     await message.channel.send('Your Confesion is anonymously forwarded Successfully')
     channel = client.get_channel(937709682544484423)
     await channel.send(message.content)
-    au = message.author
-    ms = message.content
+    au = str(message.author)
+    ms = str(message.content)
     msg = au + ms
     print(msg)
     logchannel = client.get_channel(937709682544484423)
