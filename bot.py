@@ -11,6 +11,8 @@ async def on_message(message):
 
     if message.author == client.user:
        return
+    if message.channel == "confessions-of-cse":
+        return
 
     await message.channel.send('Your Confesion is anonymously forwarded Successfully')
     channel = client.get_channel(937741220543889408)
