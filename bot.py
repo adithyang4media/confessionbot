@@ -13,7 +13,7 @@ async def on_message(message):
        return
 
     await message.channel.send('hai')
-    channel = bot.get_channel(937709682544484423)
+    channel = client.get_channel(937709682544484423)
     await channel.send('Hello')
 
 client.run(os.environ['token'])
