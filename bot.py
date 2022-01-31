@@ -8,11 +8,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    ch = str(message.channel)
 
     if message.author == client.user:
        return
-    if message.channel == "confessions-of-cse":
-        return
+    if ch == "confessions-of-cse":
+       return
 
     await message.channel.send('Your Confesion is anonymously forwarded Successfully')
     print(message.channel)
