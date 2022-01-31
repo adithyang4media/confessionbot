@@ -16,8 +16,9 @@ async def on_message(message):
     channel = client.get_channel(937709682544484423)
     await channel.send(message.content)
     au = message.author
-    print(au)
-    msg = message.author+":"+message.content
+    ms = message.content
+    msg = au + ms
+    print(msg)
     logchannel = client.get_channel(937709682544484423)
     await logchannel.send(msg)
 
