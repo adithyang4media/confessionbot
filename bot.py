@@ -14,6 +14,9 @@ async def on_message(message):
        return
     if ch == "confessions-of-cse":
        return
+    if message.content == "/check" :
+       message.channel.send('I am Online')
+       return
 
     await message.channel.send('Your Confesion is anonymously forwarded Successfully')
     print(message.channel)
